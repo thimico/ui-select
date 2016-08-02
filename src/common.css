@@ -118,13 +118,14 @@ body > .select2-container.open {
 
 .ui-select-bootstrap .ui-select-toggle {
   position: relative;
+  height: 30px;
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
   position: absolute;
   height: 10px;
   top: 50%;
-  right: 10px;
+  right: 5px;
   margin-top: -2px;
 }
 
@@ -265,4 +266,18 @@ body > .ui-select-bootstrap.open {
 /* Handle up direction Bootstrap */
 .ui-select-container[theme="bootstrap"].direction-up .ui-select-dropdown {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ui-select-match-text{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.ui-select-toggle > .btn.btn-link {
+  margin-right: 10px;
+  top: 6px;
+  position: absolute;
+  right: 10px;
 }

@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.18.1 - 2016-07-10T00:18:11.107Z
+ * Version: 0.18.1 - 2016-08-02T12:27:29.906Z
  * License: MIT
  */
 
@@ -126,13 +126,14 @@ body > .select2-container.open {
 
 .ui-select-bootstrap .ui-select-toggle {
   position: relative;
+  height: 30px;
 }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
   position: absolute;
   height: 10px;
   top: 50%;
-  right: 10px;
+  right: 5px;
   margin-top: -2px;
 }
 
@@ -228,7 +229,8 @@ body > .ui-select-bootstrap.open {
   border-right: 1px solid #428bca;
 }
 
-.ui-select-bootstrap .ui-select-choices-row>a {
+.ui-select-bootstrap .ui-select-choices-row>span {
+    cursor: pointer;
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -238,21 +240,21 @@ body > .ui-select-bootstrap.open {
     white-space: nowrap;
 }
 
-.ui-select-bootstrap .ui-select-choices-row>a:hover, .ui-select-bootstrap .ui-select-choices-row>a:focus {
+.ui-select-bootstrap .ui-select-choices-row>span:hover, .ui-select-bootstrap .ui-select-choices-row>span:focus {
     text-decoration: none;
     color: #262626;
     background-color: #f5f5f5;
 }
 
-.ui-select-bootstrap .ui-select-choices-row.active>a {
+.ui-select-bootstrap .ui-select-choices-row.active>span {
     color: #fff;
     text-decoration: none;
     outline: 0;
     background-color: #428bca;
 }
 
-.ui-select-bootstrap .ui-select-choices-row.disabled>a,
-.ui-select-bootstrap .ui-select-choices-row.active.disabled>a {
+.ui-select-bootstrap .ui-select-choices-row.disabled>span,
+.ui-select-bootstrap .ui-select-choices-row.active.disabled>span {
     color: #777;
     cursor: not-allowed;
     background-color: #fff;
@@ -272,4 +274,18 @@ body > .ui-select-bootstrap.open {
 /* Handle up direction Bootstrap */
 .ui-select-container[theme="bootstrap"].direction-up .ui-select-dropdown {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ui-select-match-text{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.ui-select-toggle > .btn.btn-link {
+  margin-right: 10px;
+  top: 6px;
+  position: absolute;
+  right: 10px;
 }
